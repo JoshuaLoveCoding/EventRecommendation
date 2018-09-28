@@ -19,6 +19,8 @@ ul {
 /**
  * top header
  */
+ 
+
 .top-header {
 	align-items: center;
 	background: #DF574B;
@@ -42,6 +44,7 @@ ul {
 	width: 40px;
 }
 
+
 /**
  * top navigation
  */
@@ -59,6 +62,15 @@ ul {
 #welcome-msg {
 	border-right: 1px solid #FFFFFF;
 	padding-right: 10px;
+}
+
+#logout-link {
+	color: #FFFFFF;
+	height: 40px;
+	margin-right: 20px;
+	padding-left: 9px;
+	padding-top: 10px;
+	width: 40px;
 }
 
 /**
