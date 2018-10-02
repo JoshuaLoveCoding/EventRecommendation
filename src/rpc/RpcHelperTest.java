@@ -26,26 +26,6 @@ public class RpcHelperTest {
 		
 		List<Item> listItem = new ArrayList<Item>();
 		JSONArray jsonArray = new JSONArray();
-		JSONAssert.assertEquals(jsonArray, RpcHelper.getJSONArray(listItem), true);
-
-		ItemBuilder itemBuilder = new ItemBuilder();
-		itemBuilder.setItemId("one");
-		itemBuilder.setRating(5);
-		itemBuilder.setCategories(category);
-		Item one = itemBuilder.build();
-		ItemBuilder itemBuilder1 = new ItemBuilder();
-		itemBuilder1.setItemId("two");
-		itemBuilder1.setRating(3);
-		itemBuilder1.setCategories(category);
-		Item two = itemBuilder1.build();
-		listItem.add(one);
-		listItem.add(two);
-
-		
-		jsonArray.put(one.toJSONObject());
-		jsonArray.put(two.toJSONObject());	
-		JSONAssert.assertEquals(jsonArray, RpcHelper.getJSONArray(listItem), true);
-		
 		Item empty = new ItemBuilder().build();
 		listItem.add(empty);
 		jsonArray.put(empty.toJSONObject());
