@@ -22,8 +22,6 @@ public class RpcHelperTest {
 	@Test
 	public void testGetJSONArrayCornerCases() throws JSONException {
 		Set<String> category = new HashSet<String>();
-		category.add("category one");
-		
 		List<Item> listItem = new ArrayList<Item>();
 		JSONArray jsonArray = new JSONArray();
 		Item empty = new ItemBuilder().build();
